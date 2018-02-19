@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+
+<html>
+<head>
+	<title>Contact</title>
+</head>
+
+<body>
+
+<form action="{{url_for('contact')}}" method="POST">
+	
+    
+	<h1>Contact Form</h1>
+	<p>Please fill out this Form</p>
+    <h3>Name</h3>
+	<p>Please enter your full name<span style="color:red">(Required)</span></p>
+	<input type="text" name="name" />
+	<h3>Email</h3>
+	<p>Please enter your email address<span style="color:red">(Required)</span></p>
+	<input type="text" name="email" />
+	<h3>Subject</h3>
+	<p>Please enter subject for your message<span style="color:red">(Required)</span></p>
+	<input type="text" name="subject" />
+	<h3>Message</h3>
+	<p>Please enter the message you wish to send<span style="color:red">(Required)</span></p>
+	<textarea rows="5" cols="50" name="message"></textarea><br/>
+	<input type="submit" name="submit" value="Submit" />
+</form>
+
+</body>
+
+
+</html>
